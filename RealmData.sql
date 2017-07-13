@@ -21,3 +21,23 @@ CREATE TABLE RealmList(
 	ConnectID INT
 );
 
+CREATE TABLE AHDataTemplate(
+	auc BIGINT NOT NULL PRIMARY KEY,
+	item BIGINT NOT NULL,
+	_owner VARCHAR(50) NOT NULL,
+	ownerRealm VARCHAR(50) NOT NULL,
+	bid BIGINT NOT NULL,
+	buyout BIGINT,
+	quantity INT,
+	time_left VARCHAR(50),
+	_rand INT,
+	seed BIGINT,
+	context INT,
+	bonusLists VARCHAR(MAX),
+	modifiers VARCHAR(MAX),
+	petSpeciesID INT,
+	petBreedID INT,
+	petLevel INT,
+	petQualityID INT
+);
+
